@@ -12,20 +12,22 @@ i {
 }
 /*----------bootstrap-navbar-css------------*/
 .navbar-logo img{
-    height: 50px;
+    height: 53px;
+}
+
+.div-logo{
+    background-color: #ffffff;
+    box-shadow: 0 2px 0px  #C7926C;
 }
 .navbar-mainbg{
 	background-color: #ffffff;
 	padding: 0px;
 }
 
-nav button{
-    background-color: #C7926C;
-}
 #navbarSupportedContent{
 	overflow: hidden;
 	position: relative;
-    box-shadow: 0 2px 4px #C7926C;
+    box-shadow: 0 2px 0px #C7926C;
 }
 #navbarSupportedContent ul{
 	padding: 0px;
@@ -115,7 +117,7 @@ nav button{
 }
 
 
-@media(min-width: 992px){
+@media(min-width: 1025px){
 	.navbar-expand-custom {
 	    -ms-flex-flow: row nowrap;
 	    flex-flow: row nowrap;
