@@ -118,7 +118,7 @@
     transform: translateY(-50%);
     margin-bottom: -6px;
     margin-left: -100px;
-    border: 1px solid var(--bs-secondary) !important;
+    border: 1px solid #940000 !important;
 }
 
 .section-title .sub-style::after {
@@ -130,7 +130,7 @@
     transform: translateY(-50%);
     margin-top: -8px;
     margin-left: -50px;
-    border: 1px solid var(--bs-primary) !important;
+    border: 1px solid #193172 !important;
 }
 
 .sub-title {
@@ -149,7 +149,7 @@
     transform: translateY(-50%);
     margin-bottom: -8px;
     margin-right: -100px;
-    border: 1px solid var(--bs-secondary) !important;
+    border: 1px solid #940000 !important;
 }
 
 .sub-title::after {
@@ -161,7 +161,7 @@
     transform: translateY(-50%);
     margin-top: -6px;
     margin-right: -50px;
-    border: 1px solid var(--bs-primary) !important;
+    border: 1px solid #193172 !important;
 }
 
 
