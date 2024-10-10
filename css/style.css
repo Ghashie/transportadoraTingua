@@ -474,9 +474,9 @@
     left: 0;
     top: 0;
     border-radius: 10px 10px 0 0;
-    background-color: var(--bs-primary);
-    
+    background-color: #193172; /* Azul substituído */
 }
+
 .counter-facts .counter .counter-icon {
     position: relative;
     width: 120px;
@@ -486,10 +486,11 @@
     transform: translateY(-20px);
     font-size: 50px;
     line-height: 90px;
-    color: var(--bs-secondary);
-    background: rgba(1, 143, 252, 0.5);
+    color: #8F192A; /* Vermelho substituído */
+    background: rgba(45, 69, 153, 0.5); /* Azul escurecido */
     clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 100%, 0 70%);
 }
+
 .counter-facts .counter .counter-icon:before {
     content: "";
     position: absolute;
@@ -499,33 +500,39 @@
     left: 50%;
     transform: translateX(-50%);
     border-radius: 10px 10px 0 0;
-    background: rgba(0, 58, 102, 0.5);
+    background: rgba(31, 49, 114, 0.5); /* Azul escurecido */
     z-index: -1;
     clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 100%, 0 70%);
 }
+
 .counter-facts .counter:hover .counter-icon i {
     transform: rotate(360deg);
     transition: all 0.3s ease;
 }
+.counter h4{
+    color: #8F192A;
+}
 .counter-facts .counter h3 {
-    color: var(--bs-primary);
+    color: #193172; /* Azul substituído */
     font-size: 17px;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin: 0 0 5px 0;
 }
+
 .counter-facts .counter .counter-value {
     font-size: 30px;
     font-weight: 700;
     display: block;
-    color: var(--bs-secondary);
+    color: #8F192A; /* Vermelho substituído */
 }
 
 @media screen and (max-width: 1200px) {
     .counter-facts .counter { margin-bottom: 40px; 
     }
 }
+
 /*** Counter Facts End ***/
 
 
