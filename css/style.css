@@ -447,7 +447,7 @@
 
 /*** Counter Facts Start ***/
 .counter-facts {
-    background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 0.8)), url(../img/breadcrumb.png);
+    background: linear-gradient(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.758)), url(../img/rotas2.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -557,7 +557,7 @@
     margin-right: 30px;
     text-align: center;
     border-radius: 10px;
-    background: var(--bs-primary);
+    background: #193172; /* Azul */
     opacity: 0;
     transition: 0.5s;
 }
@@ -568,7 +568,7 @@
 }
 
 .service .service-item .service-inner .service-title .service-content a h4 {
-    border-bottom: 1px solid rgba(256, 256, 256, .1);
+    border-bottom: 1px solid #193172; /* Azul */
 }
 
 .service .service-item .service-inner .service-title .service-title-name {
@@ -610,6 +610,7 @@
 .service .service-item:hover .service-inner .service-img img {
     transform: scale(1.3);
 }
+
 /*** Service End ***/
 
 
