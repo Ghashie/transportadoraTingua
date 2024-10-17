@@ -36,17 +36,7 @@
 
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/" rel="stylesheet">
-
-    <style>
-        .info-linha {
-            display: none;
-        }
-
-        .ativo {
-            display: block;
-        }
-    </style>
+    <link href="../css/linhas.css" rel="stylesheet">
 </head>
 
 <body>
@@ -118,17 +108,17 @@
     <!-- Navbar & Hero End -->
 
     <!-- Conteúdo linhas Início-->
+    <!-- Conteúdo linhas Início-->
     <div class="container">
         <h1 class="my-4 text-center">Linhas de Ônibus - Tinguá</h1>
 
         <!-- Seleção de Linha -->
         <div class="row mb-4">
             <div class="col-md-6 offset-md-3">
-                <label for="linhas" class="form-label">Selecione uma linha:</label>
                 <select id="linhas" class="form-select" onchange="exibirInfoLinha()">
-                    <option value="" disabled selected>Escolha uma linha</option>
-                    <option value="linha1">Linha 1 - Centro</option>
-                    <option value="linha2">Linha 2 - Bairro X</option>
+                    <option value="" disabled selected>Selecione uma linha</option>
+                    <option value="linha1">400T - Belford Roxo - Barra da Tijuca (Via Linha Amarela)</option>
+                    <option value="linha2">425T - Queimados - Barra da Tijuca (Via Linha Amarela)</option>
                     <!-- Adicione mais opções conforme necessário -->
                 </select>
             </div>
@@ -136,24 +126,88 @@
 
         <!-- Informações das Linhas -->
         <div id="linha1" class="info-linha row">
-            <div class="col-md-6 offset-md-3">
-                <h2>Linha 1 - Centro</h2>
-                <p><strong>Rota (Ida e Volta):</strong></p>
-                <img src="rota-linha1.png" alt="Rota da Linha 1" class="img-fluid">
-                <p><strong>Horários de circulação:</strong> 06:00 - 22:00</p>
-                <p><strong>Valor da passagem:</strong> R$ 4,50</p>
-                <p><strong>Climatizado:</strong> Sim</p>
+            <div class="col-md-12">
+                <h2 class="text-center">400T - Belford Roxo - Barra da Tijuca (Via Linha Amarela)</h2>
+
+                <!-- Rotas de Ida e Volta com Informações no Centro -->
+                <div class="rotas">
+                    <!-- Coluna de IDA -->
+                    <div>
+                        <h3 class="text-success text-center direcao">IDA</h3>
+                        <div class="linha-vertical">
+                            <ul class="paradas-lista">
+                                <li class="parada">RUA VISCONDE DE NITERÓI</li>
+                                <li class="parada">RUA ARAGUARI</li>
+                                <li class="parada">AVENIDA JOÃO VENANCIO DA ROSA</li>
+                                <li class="parada">AVENIDA PARIS</li>
+                                <li class="parada">AVENIDA GETÚLIO DE MOURA</li>
+                                <!-- Adicione mais paradas conforme necessário -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Informações no Centro -->
+                    <div class="info-central text-center">
+                        <p><strong>Horários de circulação:</strong> 06:00 - 22:00</p>
+                        <p><strong>Valor da passagem:</strong> R$ 4,50</p>
+                        <p><strong>Climatizado:</strong> Sim</p>
+                    </div>
+
+                    <!-- Coluna de VOLTA -->
+                    <div>
+                        <h3 class="text-success text-center direcao">VOLTA</h3>
+                        <div class="linha-vertical">
+                            <div class="parada">RUA MARIA SOARES SENDAS</div>
+                            <div class="parada">ESTRADA SÃO JOÃO CAXIAS</div>
+                            <div class="parada">VIADUTO SÃO JOÃO CAXIAS</div>
+                            <div class="parada">RUA SÃO JOÃO BATISTA</div>
+                            <div class="parada">RUA ALBERTO BAPTISTA DE MORAES</div>
+                            <!-- Adicione mais paradas conforme necessário -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div id="linha2" class="info-linha row">
-            <div class="col-md-6 offset-md-3">
-                <h2>Linha 2 - Bairro X</h2>
-                <p><strong>Rota (Ida e Volta):</strong></p>
-                <img src="rota-linha2.png" alt="Rota da Linha 2" class="img-fluid">
-                <p><strong>Horários de circulação:</strong> 05:30 - 23:00</p>
-                <p><strong>Valor da passagem:</strong> R$ 5,00</p>
-                <p><strong>Climatizado:</strong> Não</p>
+            <div class="col-md-12">
+                <h2 class="text-center">425T - Queimados - Barra da Tijuca (Via Linha Amarela)</h2>
+
+                <!-- Rotas de Ida e Volta com Informações no Centro -->
+                <div class="rotas">
+                    <!-- Coluna de IDA -->
+                    <div>
+                        <h3 class="text-success text-center direcao">IDA</h3>
+                        <div class="linha-vertical">
+                            <div class="parada">RUA A</div>
+                            <div class="parada">RUA B</div>
+                            <div class="parada">RUA C</div>
+                            <div class="parada">RUA D</div>
+                            <div class="parada">RUA E</div>
+                            <!-- Adicione mais paradas conforme necessário -->
+                        </div>
+                    </div>
+
+                    <!-- Informações no Centro -->
+                    <div class="info-central text-center">
+                        <p><strong>Horários de circulação:</strong> 05:30 - 23:00</p>
+                        <p><strong>Valor da passagem:</strong> R$ 5,00</p>
+                        <p><strong>Climatizado:</strong> Não</p>
+                    </div>
+
+                    <!-- Coluna de VOLTA -->
+                    <div>
+                        <h3 class="text-success text-center direcao">VOLTA</h3>
+                        <div class="linha-vertical">
+                            <div class="parada">RUA X</div>
+                            <div class="parada">RUA Y</div>
+                            <div class="parada">RUA Z</div>
+                            <div class="parada">RUA W</div>
+                            <div class="parada">RUA V</div>
+                            <!-- Adicione mais paradas conforme necessário -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

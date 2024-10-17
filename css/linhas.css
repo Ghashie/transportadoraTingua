@@ -1,0 +1,134 @@
+.info-linha {
+    display: none;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 40px; /* Espaçamento entre a seção de informações e o conteúdo */
+}
+
+.ativo {
+    display: block;
+}
+
+/* Rota dos Onibus */
+
+.linha-vertical {
+    position: relative;
+    padding-left: 50px; /* Espaço para o texto das paradas */
+}
+
+.paradas-lista {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.parada {
+    position: relative;
+    padding-left: 30px; /* Espaçamento para o quadrado */
+    margin-bottom: 20px; /* Espaçamento entre as paradas */
+}
+
+.parada::before {
+    content: '';
+    position: absolute;
+    left: 10px; /* Posição do quadrado */
+    top: 0;
+    height: 12px;
+    width: 12px;
+    background-color: #940000;
+    border: 2px solid #193172;
+    border-radius: 0; /* Forma quadrada */
+    z-index: 1; /* Quadrado acima da linha */
+}
+
+.parada::after {
+    content: '';
+    position: absolute;
+    left: 15px; /* Alinhar a linha com o quadrado */
+    top: 0;
+    bottom: -20px; /* Faz a linha continuar para a próxima parada */
+    width: 2px;
+    background-color: #193172;
+    z-index: 0; /* Linha atrás dos quadrados */
+}
+
+.parada:last-child::after {
+    content: ''; /* Remover a linha após o último item */
+    bottom: 0;
+}
+
+.direcao{
+    color: #193172 !important;
+}
+
+.rotas {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px; /* Aumenta o espaço entre "IDA" e "VOLTA" */
+    align-items: flex-start;
+}
+
+/* Caixa vazada para as informações */
+.info-central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black; /* Quadrado vazado ao redor das informações */
+    border-radius: 8px;
+    margin-bottom: 30px;
+    width: 250px; /* Define uma largura para a seção de informações */
+}
+
+.info-central p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Estilização do select */
+select#linhas {
+    border: 2px solid #193172 !important ; /* Borda dourada ao redor do select */
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+select#linhas:focus {
+    outline: none;
+    border-color: #C7926C !important;
+    box-shadow: 0px 0px 10px #C7926C; /* Efeito dourado ao focar */
+}
+
+/* Personalizar dropdown do select */
+select#linhas option {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+}
+
+select#linhas option:hover {
+    background-color: #C7926C; /* Fundo dourado ao passar o mouse */
+    color: white;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .rotas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-central {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
