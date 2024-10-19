@@ -69,27 +69,24 @@
     align-items: flex-start;
 }
 
-/* Caixa vazada para as informações */
-.info-central {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+h1 {
     text-align: center;
-    padding: 20px;
-    border: 2px solid black; /* Quadrado vazado ao redor das informações */
-    border-radius: 8px;
-    margin-bottom: 30px;
-    width: 250px; /* Define uma largura para a seção de informações */
+    margin-bottom: 40px;
 }
 
-.info-central p {
-    margin: 10px 0;
-    font-size: 16px;
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-/* Estilização do select */
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o select */
 select#linhas {
-    border: 2px solid #193172 !important ; /* Borda dourada ao redor do select */
+    border: 2px solid #193172;
     padding: 10px;
     border-radius: 8px;
     background-color: white;
@@ -101,21 +98,71 @@ select#linhas {
 
 select#linhas:focus {
     outline: none;
-    border-color: #C7926C !important;
-    box-shadow: 0px 0px 10px #C7926C; /* Efeito dourado ao focar */
-}
-
-/* Personalizar dropdown do select */
-select#linhas option {
-    background-color: white;
-    padding: 10px;
-    border: 1px solid lightgray;
-    font-size: 16px;
+    border-color: #193172;
+    box-shadow: 0px 0px 10px #193172;
 }
 
 select#linhas option:hover {
-    background-color: #C7926C; /* Fundo dourado ao passar o mouse */
+    background-color: gold;
     color: white;
+}
+
+/* Informações principais estilo arredondado */
+.info-central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.info-central p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+/* Estilos dos dados da linha */
+.info-central p strong {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilo arredondado para as caixas de informações */
+.linha-info-arredondada {
+    background-color: white;
+    border: 2px solid #193172;
+    border-radius: 10px;
+    padding: 5px 20px;
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #193172;
+    font-weight: bold;
+}
+
+.linha-info-valor {
+    background-color: #193172;
+    border-radius: 10px;
+    padding: 10px 30px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .rotas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-central {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 
 

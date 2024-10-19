@@ -36,7 +36,7 @@
 
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/linhas.css" rel="stylesheet">
+    <link href="../css/politica.css" rel="stylesheet">
 </head>
 
 <body>
@@ -107,117 +107,84 @@
     </div>
     <!-- Navbar & Hero End -->
 
-    <!-- Conteúdo linhas Início-->
-    <div class="container">
-        <h1 class="my-4 text-center">Linhas de Ônibus - Tinguá</h1>
+    <!-- Politica Início-->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Política de Privacidade</h1>
 
-        <!-- Seleção de Linha -->
-        <div class="row mb-4">
-            <div class="col-md-6 offset-md-3">
-                <select id="linhas" class="form-select" onchange="exibirInfoLinha()">
-                    <option value="" disabled selected>Selecione uma linha</option>
-                    <option value="linha1">400T - Belford Roxo - Barra da Tijuca (Via Linha Amarela)</option>
-                    <option value="linha2">425T - Queimados - Barra da Tijuca (Via Linha Amarela)</option>
-                    <!-- Adicione mais opções conforme necessário -->
-                </select>
-            </div>
-        </div>
-
-        <!-- Informações das Linhas -->
-        <div id="linha1" class="info-linha row">
-            <div class="col-md-12">
-                <h2 class="text-center">400T - Belford Roxo - Barra da Tijuca (Via Linha Amarela)</h2>
-
-                <!-- Rotas de Ida e Volta com Informações no Centro -->
-                <div class="rotas">
-                    <!-- Coluna de IDA -->
-                    <div>
-                        <h3 class="text-success text-center direcao">IDA</h3>
-                        <div class="linha-vertical">
-                            <ul class="paradas-lista">
-                                <li class="parada">RUA VISCONDE DE NITERÓI</li>
-                                <li class="parada">RUA ARAGUARI</li>
-                                <li class="parada">AVENIDA JOÃO VENANCIO DA ROSA</li>
-                                <li class="parada">AVENIDA PARIS</li>
-                                <li class="parada">AVENIDA GETÚLIO DE MOURA</li>
-                                <!-- Adicione mais paradas conforme necessário -->
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Informações no Centro -->
-                    <div class="info-central text-center">
-                        <p><strong>Tarifa atual:</strong></p>
-                        <p class="linha-info-valor">R$ 4,50</p>
-                        <p><strong>Horários de circulação:</strong></p>
-                        <p class="linha-info-arredondada">06:00 - 22:00</p>
-                        <p><strong>Climatizado:</strong></p>
-                        <p class="linha-info-arredondada">Sim</p>
-                    </div>
-
-                    <!-- Coluna de VOLTA -->
-                    <div>
-                        <h3 class="text-success text-center direcao">VOLTA</h3>
-                        <div class="linha-vertical">
-                            <div class="parada">RUA MARIA SOARES SENDAS</div>
-                            <div class="parada">ESTRADA SÃO JOÃO CAXIAS</div>
-                            <div class="parada">VIADUTO SÃO JOÃO CAXIAS</div>
-                            <div class="parada">RUA SÃO JOÃO BATISTA</div>
-                            <div class="parada">RUA ALBERTO BAPTISTA DE MORAES</div>
-                            <!-- Adicione mais paradas conforme necessário -->
-                        </div>
+        <div class="accordion" id="politicaAccordion">
+            <!-- Seção 1: Dados Coletados -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Dados Coletados
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#politicaAccordion">
+                    <div class="accordion-body">
+                        Coletamos informações pessoais que você nos fornece diretamente, como nome, e-mail, e outras informações necessárias para fornecer nossos serviços. Nós também coletamos dados automaticamente por meio de cookies e outras tecnologias semelhantes.
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div id="linha2" class="info-linha row">
-            <div class="col-md-12">
-                <h2 class="text-center">425T - Queimados - Barra da Tijuca (Via Linha Amarela)</h2>
-
-                <!-- Rotas de Ida e Volta com Informações no Centro -->
-                <div class="rotas">
-                    <!-- Coluna de IDA -->
-                    <div>
-                        <h3 class="text-success text-center direcao">IDA</h3>
-                        <div class="linha-vertical">
-                            <div class="parada">RUA A</div>
-                            <div class="parada">RUA B</div>
-                            <div class="parada">RUA C</div>
-                            <div class="parada">RUA D</div>
-                            <div class="parada">RUA E</div>
-                            <!-- Adicione mais paradas conforme necessário -->
-                        </div>
+            <!-- Seção 2: Uso de Cookies -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Uso de Cookies
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#politicaAccordion">
+                    <div class="accordion-body">
+                        <strong>Cookies</strong> são pequenos arquivos de texto armazenados no seu dispositivo que nos permitem lembrar suas preferências e melhorar sua experiência de navegação. Utilizamos apenas o <strong>Google Analytics</strong> para coletar informações sobre como você usa o nosso site, como páginas visitadas e duração da visita. Essas informações são anônimas e servem para otimizar nossos serviços.
                     </div>
+                </div>
+            </div>
 
-                    <!-- Informações no Centro -->
-                    <div class="info-central text-center">
-                        <p><strong>Tarifa atual:</strong></p>
-                        <p class="linha-info-valor">R$ 4,50</p>
-                        <p><strong>Horários de circulação:</strong></p>
-                        <p class="linha-info-arredondada">06:00 - 22:00</p>
-                        <p><strong>Climatizado:</strong></p>
-                        <p class="linha-info-arredondada">Sim</p>
+            <!-- Seção 3: Google Analytics -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Google Analytics
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#politicaAccordion">
+                    <div class="accordion-body">
+                        O <strong>Google Analytics</strong> é uma ferramenta que nos ajuda a entender como você interage com o nosso site, coletando informações como o endereço de IP, tipo de navegador, e páginas visitadas. Todos os dados coletados pelo Google Analytics são anônimos e usados para melhorar o desempenho do nosso site.
                     </div>
+                </div>
+            </div>
 
-                    <!-- Coluna de VOLTA -->
-                    <div>
-                        <h3 class="text-success text-center direcao">VOLTA</h3>
-                        <div class="linha-vertical">
-                            <div class="parada">RUA X</div>
-                            <div class="parada">RUA Y</div>
-                            <div class="parada">RUA Z</div>
-                            <div class="parada">RUA W</div>
-                            <div class="parada">RUA V</div>
-                            <!-- Adicione mais paradas conforme necessário -->
-                        </div>
+            <!-- Seção 4: Compartilhamento de Dados -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Compartilhamento de Dados
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#politicaAccordion">
+                    <div class="accordion-body">
+                        Nós não compartilhamos suas informações pessoais com terceiros, exceto quando necessário para operar o serviço ou quando exigido por lei. Seus dados são tratados com o máximo de confidencialidade.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção 5: Seus Direitos -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Seus Direitos
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#politicaAccordion">
+                    <div class="accordion-body">
+                        Você tem o direito de acessar, corrigir ou excluir suas informações pessoais a qualquer momento. Para exercer esses direitos, entre em contato conosco através do e-mail fornecido em nosso site.
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Conteúdo linhas Fim -->
+    <!-- Politica Fim -->
 
     <!-- Footer inicio -->
     <footer class="footer-06">
@@ -290,7 +257,7 @@
                                     class="ion-ios-checkmark-circle-outline mr-2"></span>História</a></li>
                         <li><a href="#" class="py-1 d-block"><span
                                     class="ion-ios-checkmark-circle-outline mr-2"></span>Frota</a></li>
-                        <li><a href="" class="py-1 d-block"><span
+                        <li><a href="#" class="py-1 d-block"><span
                                     class="ion-ios-checkmark-circle-outline mr-2"></span>Linhas</a></li>
                     </ul>
                 </div>
