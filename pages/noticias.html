@@ -33,17 +33,13 @@
 
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/noticias.css">
 </head>
 
 <body>
 
     <!-- Carregamento Inicio -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
+   
     <!-- Carregamento Fim -->
 
 
@@ -104,6 +100,114 @@
     <!-- Navbar & Hero End -->
 
     <!-- Conteúdo Noticias Início -->
+
+    <div class="container py-5">
+        <!-- Seção de Cards -->
+        <div class="container-fluid service overflow-hidden pt-5">
+            <div class="container py-5">
+                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h5 class="sub-title px-3">Nosssas Campanhas</h5>
+                    </div>
+                    <h1 class="display-5 mb-4">Conheça um pouco das nossas campanhas de sucesso!</h1>
+                    <p class="mb-0">Fazer campanhas sempre foi um dos principais objetivos da Tinguá, pois assim podemos ajudar a alcançar mais público para determinadas áreas necessitadas! É por isso que vamos semore anunciar nossas novas campanhas por aqui e em nossas redes socias</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s" id="card-1" onclick="showContent(1)"> 
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="../img/2022-11-10.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                </div>
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="text-center rounded p-3 mx-5 mb-4" style="background-color: #193172;">
+                                            <a href="#"   class="h4 text-white mb-0">Campanha Teste</a>
+                                        </div>
+                                        <a class="btn py-3 px-5 mb-4" href="#" class="btn-falso" style="border-radius: 50px; background-color: #5c7eda21; color: #8F192A;">Explore More</a>
+                                    </div>
+                                    <div class="service-content pb-4">
+                                        <a href="#" style="text-decoration: none;"><h4 class="text-white mb-4 py-3"> Primeira Campanha</h4></a>
+                                        <div class="px-4">
+                                            <p class="mb-4" style="color: #f8f9fa;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.</p>
+                                            <a class="btn btn-primary border-secondary rounded-pill py-3 px-5"  id="card-1" onclick="showContent(1)">Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s" id="card-2" onclick="showContent(2)">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="../img/2022-11-10.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                </div>
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="text-center rounded p-3 mx-5 mb-4" style="background-color: #193172;">
+                                            <a href="#"  class="h4 text-white mb-0">Campanha Teste</a>
+                                        </div>
+                                        <a class="btn py-3 px-5 mb-4" href="#" class="btn-falso" style="border-radius: 50px; background-color: #5c7eda21; color: #8F192A;">Explore More</a>
+                                    </div>
+                                    <div class="service-content pb-4">
+                                        <a href="#" style="text-decoration: none;"><h4 class="text-white mb-4 py-3"> Segunda Campanha</h4></a>
+                                        <div class="px-4">
+                                            <p class="mb-4" style="color: #f8f9fa;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.</p>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" id="card-2" onclick="showContent(2)">Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s" id="card-3" onclick="showContent(3)"> 
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="../img/2022-11-10.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                </div>
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="text-center rounded p-3 mx-5 mb-4" style="background-color: #193172;">
+                                            <a href="#"  class="h4 text-white mb-0">Campanha Teste</a>
+                                        </div>
+                                        <a class="btn py-3 px-5 mb-4" href="#" class="btn-falso" style="border-radius: 50px; background-color: #5c7eda21; color: #8F192A;">Explore More</a>
+                                    </div>
+                                    <div class="service-content pb-4">
+                                        <a href="#" style="text-decoration: none;"><h4 class="text-white mb-4 py-3">Terceira Campanha</h4></a>
+                                        <div class="px-4">
+                                            <p class="mb-4" style="color: #f8f9fa;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.</p>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"  id="card-3" onclick="showContent(3)">Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+      
+        <!-- Seção de Conteúdo -->
+        <div class="content-section mt-5">
+            <div id="content-1" class="content active">
+                <h2>Campanha 1</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, mollitia! Ut laborum illum soluta? Deserunt aut, suscipit molestias rem numquam harum nulla necessitatibus error nesciunt possimus! Laudantium ipsa modi fugit officia quisquam aliquam iusto praesentium maiores fugiat. Doloribus quos mollitia, tenetur laborum minima quibusdam architecto at dolorem numquam consectetur. Delectus nesciunt enim distinctio vitae magni numquam beatae officia, provident excepturi eaque qui, nihil saepe, dolores dicta. Iste numquam dolorem ipsum? Iste nihil laudantium laboriosam, ab error aliquid nostrum alias, non, dolores eveniet adipisci natus est. Maxime quisquam suscipit dolor quae dicta, eos sint vero omnis, architecto numquam illo obcaecati reiciendis.</p>
+            </div>
+            <div id="content-2" class="content">
+                <h2>Campanha 2</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, mollitia! Ut laborum illum soluta? Deserunt aut, suscipit molestias rem numquam harum nulla necessitatibus error nesciunt possimus! Laudantium ipsa modi fugit officia quisquam aliquam iusto praesentium maiores fugiat. Doloribus quos mollitia, tenetur laborum minima quibusdam architecto at dolorem numquam consectetur. Delectus nesciunt enim distinctio vitae magni numquam beatae officia, provident excepturi eaque qui, nihil saepe, dolores dicta. Iste numquam dolorem ipsum? Iste nihil laudantium laboriosam, ab error aliquid nostrum alias, non, dolores eveniet adipisci natus est. Maxime quisquam suscipit dolor quae dicta, eos sint vero omnis, architecto numquam illo obcaecati reiciendis.</p>
+            </div>
+            <div id="content-3" class="content">
+                <h2>Campanha 3</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, mollitia! Ut laborum illum soluta? Deserunt aut, suscipit molestias rem numquam harum nulla necessitatibus error nesciunt possimus! Laudantium ipsa modi fugit officia quisquam aliquam iusto praesentium maiores fugiat. Doloribus quos mollitia, tenetur laborum minima quibusdam architecto at dolorem numquam consectetur. Delectus nesciunt enim distinctio vitae magni numquam beatae officia, provident excepturi eaque qui, nihil saepe, dolores dicta. Iste numquam dolorem ipsum? Iste nihil laudantium laboriosam, ab error aliquid nostrum alias, non, dolores eveniet adipisci natus est. Maxime quisquam suscipit dolor quae dicta, eos sint vero omnis, architecto numquam illo obcaecati reiciendis.</p>
+            </div>
+        </div>
 
     <!-- Footer inicio -->
     <footer class="footer-06">
@@ -193,7 +297,7 @@
 
 
     <!-- Template Javascript -->
-    <script src="../js/main.js"></script>
+    <script src="../js/noticias.js"></script>
 
 </body>
 
